@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="1" name="pytest" skips="0" tests="4" time="0.414"><testcase classname="pytests.test_index" file="pytests/test_index.py" line="12" name="test_conda_environment_activated" time="0.001745462417602539"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="15" name="test_travel_month" time="0.0006368160247802734"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="19" name="test_number_of_weeks" time="0.0006151199340820312"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="23" name="test_travelling_schedule" time="0.0028929710388183594"><failure message="AssertionError: You must interpolate both the number of weeks we will be travelling as well as the travel_month
+assert &apos;i will be tr...th of january&apos; == &apos;i will be tra...th of january&apos;
+  - i will be traveling 5 weeks starting in the month of january
+  + i will be travelling 5 weeks starting in the month of january
+  ?                 +">def test_travelling_schedule():
+        assert travelling_schedule is not None, &quot;Remember to reassign the travel_month variable&quot;
+&gt;       assert travelling_schedule.lower() == &quot;I will be travelling 5 weeks starting in the month of January&quot;.lower(), &quot;You must interpolate both the number of weeks we will be travelling as well as the travel_month&quot;
+E       AssertionError: You must interpolate both the number of weeks we will be travelling as well as the travel_month
+E       assert &apos;i will be tr...th of january&apos; == &apos;i will be tra...th of january&apos;
+E         - i will be traveling 5 weeks starting in the month of january
+E         + i will be travelling 5 weeks starting in the month of january
+E         ?                 +
+
+pytests/test_index.py:26: AssertionError</failure></testcase></testsuite>
